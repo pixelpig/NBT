@@ -188,6 +188,10 @@ public class MCAFile implements Iterable<Chunk> {
 		return getChunk(getChunkIndex(chunkX, chunkZ));
 	}
 
+	public Chunk[] getChunks() {
+		return chunks;
+	}
+
 	/**
 	 * Calculates the index of a chunk from its x- and z-coordinates in this region.
 	 * This works with absolute and relative coordinates.
